@@ -27,7 +27,10 @@ export default {
   css: ["~/assets/css/style.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    "~/plugins/i18n-data.js",
+    "~/plugins/i18n-persist.client.js",
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -42,7 +45,27 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    // https://i18n.nuxtjs.org
+    "@nuxtjs/i18n",
   ],
+
+  // i18n module configuration: https://i18n.nuxtjs.org/options-reference
+  i18n: {
+    locales: [
+      { code: "lo", name: "ລາວ", iso: "lo-LA", file: "lo.json" },
+      { code: "en", name: "English", iso: "en-US", file: "en.json" },
+    ],
+    langDir: "locales/",
+    lazy: true,
+    defaultLocale: "lo",
+    strategy: "no_prefix",
+    vueI18n: {
+      fallbackLocale: "lo",
+    },
+    // Lao always wins on a first visit; the visitor's own choice is
+    // remembered by plugins/i18n-persist.client.js instead.
+    detectBrowserLanguage: false,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

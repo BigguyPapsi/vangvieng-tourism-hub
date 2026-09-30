@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": { "lo": "ເສື້ອຍືນ", "en": "T-shirt" },
+      "price": 250
+    },
+    {
+      "id": 2,
+      "name": { "lo": "ໂສ້ງຢີນ", "en": "Jeans" },
+      "price": 890
+    },
+    {
+      "id": 3,
+      "name": { "lo": "ເກີບ", "en": "Shoes" },
+      "price": 1200
+    }
+  ],
+  "navigations": [
+    { "icon": "mdi-home", "name": { "lo": "ໜ້າຫຼັກ", "en": "Home" }, "href": "/" },
+    {
+      "icon": "mdi-image-filter-hdr",
+      "name": { "lo": "ສະຖານທີ່ທ່ອງທ່ຽວ", "en": "Attractions" },
+      "href": "/attractions"
+    },
+    {
+      "icon": "mdi-silverware-fork-knife",
+      "name": { "lo": "ຮ້ານອາຫານ", "en": "Restaurants" },
+      "href": "/restaurants"
+    },
+    {
+      "icon": "mdi-home-city",
+      "name": { "lo": "ທີ່ພັກ", "en": "Stays" },
+      "href": "/stays"
+    },
+    { "icon": "mdi-information", "name": { "lo": "ກ່ຽວກັບ", "en": "About" }, "href": "/about" }
+  ]
+}

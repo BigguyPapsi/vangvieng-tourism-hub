@@ -1,0 +1,14 @@
+{
+  "app": {
+    "title": "Vang Vieng, a beautiful land"
+  },
+  "nav": {
+    "language": "Language",
+    "menu": "Menu"
+  },
+  "products": {
+    "title": "Product list",
+    "currency": "LAK",
+    "empty": "No products yet"
+  }
+}
